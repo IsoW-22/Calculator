@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    display: grid;
+    height: 100%;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    grid-auto-rows: minmax(30px ,100%);
+    grid-auto-columns: minmax(30px , 100%);
+    grid-template-areas: 
+        "headers headers headers headers headers headers headers headers headers"
+        "head head head head head head head rights rights"
+        "head head head head head head head rights rights"
+        "head head head head head head head rights rights"
+        "head head head head head head head rights rights"
+        "head head head head head head head rights rights"
+        "head head head head head head head rights rights"
+        "head head head head head head head rights rights"
+        "number number number number number number number rights rights"
+        "number number number number number number number rights rights"
+        "number number number number number number number rights rights"
+        "number number number number number number number rights rights"
+        "number number number number number number number rights rights"
+        "number number number number number number number rights rights"
+        "number number number number number number number rights rights"
+        "number number number number number number number rights rights"
+        "number number number number number number number rights rights"
+        "number number number number number number number rights rights"
+        "number number number number number number number rights rights"
+        "number number number number number number number rights rights";
+}
+
+#closer {
+    grid-area: headers;
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+#closer p {
+    margin: 6px 0 0 14px;
+    font-size: 12px;
+}
+
+#head {
+    background-color:#f1f1f1;
+    grid-area: head;
+    max-height: 100%;
+}
+
+
+#numbers {
+    background-color:#f4f4f4;
+    grid-area: number;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5px;
+    justify-content: space-around;
+}
+
+.numeral {
+    height: 75px;
+    width: 208px;
+    background-color: #f8f8f8;
+    margin: 1px;
+    text-align: center;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whitenumber {
+    height: 75px;
+    width: 208px;
+    background-color: #fdfdfd;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whitenumber:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.numeral:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.hesab {
+    height: 75px;
+    width: 208px;
+    background-color: #f8f8f8;
+    margin: 1px;
+    text-align: center;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hesab:hover {
+    background-color: #d14047;
+}
+
+.Ms {
+    height: 40;
+    width: 80px;
+    font-size: 9pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+#MsCon {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    top: 95px;
+}
+
+.Ms:hover {
+    background-color: #e0e0e0;
+}
+
+#menu {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 2px;
+}
+
+#menu:hover {
+    background-color: #e0e0e0;
+}
+
+#pst {
+    position: absolute;
+    left: 50px;
+    top: 39px;
+    font-size: 19px;
+}
+
+#right {
+    background-color:#f3f3f3;
+    grid-area: rights;
+}
+
+.one {
+    position: relative;
+    top: 15px;
+    right: 0px;
+    font-weight: 500;
+    font-size: 17px;
+    border-bottom: 3px solid #e81123;
+    width: 55px;
+    padding-bottom: 5px;
+}
+
+.two {
+    position: relative;
+    left: 82px;
+    bottom: 12px;
+    font-weight: 500;
+}
+
+.three {
+    position: relative;
+    top: 28px;
+    right: 0px;
+    font-weight: 500;
+}
+
+#zero {
+    font-size: 45px;
+    position: relative;
+    left: 95%;
+    top: 35px;
+}
+
+.up {
+    flex-direction: column;
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+.btn {
+    width: 48px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
+.bast img {
+    margin-left: 2px;
+}
+
+.bast:hover {
+    background-color: #e81123;
+}
+
+.hid {
+    opacity: 0.25;
+    height: 40px;
+    width: 80px;
+    font-size: 9pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
